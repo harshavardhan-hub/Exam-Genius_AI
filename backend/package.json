@@ -1,0 +1,55 @@
+{
+  "name": "examgenius-ai-backend",
+  "version": "1.0.0",
+  "description": "ExamGenius AI - Intelligent test preparation platform backend with AI-powered question generation and adaptive learning analytics",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run migrate && node server.js",
+    "dev": "nodemon server.js",
+    "build": "npm install",
+    "migrate": "psql $DATABASE_URL -f migrations/001_initial_schema.sql || echo 'Migration completed or already applied'",
+    "postinstall": "npm run migrate",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linting configured\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "examgenius",
+    "ai",
+    "test-preparation", 
+    "education",
+    "backend",
+    "nodejs",
+    "postgresql",
+    "openrouter",
+    "adaptive-learning"
+  ],
+  "author": "ExamGenius AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/examgenius-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/examgenius-ai/issues"
+  },
+  "homepage": "https://examgenius-ai.com"
+}

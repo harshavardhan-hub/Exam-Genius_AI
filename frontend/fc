@@ -1,0 +1,67 @@
+exam-genius-ai/
+├── backend/
+│   ├── config/
+│   │   └── database.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── testController.js
+│   │   ├── attemptController.js
+│   │   ├── adminController.js
+│   │   ├── aiController.js
+│   │   └── aiPracticeController.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── rateLimit.js
+│   ├── models/
+│   │   └── db.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── tests.js
+│   │   ├── attempts.js
+│   │   ├── admin.js
+│   │   ├── ai.js
+│   │   └── aiPractice.js
+│   ├── services/
+│   │   └── openrouter.js
+│   ├── migrations/
+│   │   └── 001_initial_schema.sql
+│   ├── .env.example
+│   ├── server.js
+│   ├── package.json
+│   └── README.md
+└── frontend/
+    ├── public/
+    │   └── index.html
+    ├── src/
+    │   ├── components/
+    │   │   ├── Header.jsx
+    │   │   ├── Timer.jsx
+    │   │   ├── TestQuestion.jsx
+    │   │   ├── TopicSummary.jsx
+    │   │   ├── QuestionUploader.jsx
+    │   │   ├── AdminTestCreator.jsx
+    │   │   ├── SectionTimer.jsx
+    │   │   └── UserReportsDashboard.jsx
+    │   ├── pages/
+    │   │   ├── Login.jsx
+    │   │   ├── Register.jsx
+    │   │   ├── Dashboard.jsx
+    │   │   ├── TestPage.jsx
+    │   │   ├── ReportPage.jsx
+    │   │   ├── AttemptsPage.jsx
+    │   │   ├── AdminUpload.jsx
+    │   │   ├── AIPracticePage.jsx
+    │   │   └── AIPracticeReportPage.jsx
+    │   ├── api/
+    │   │   └── api.js
+    │   ├── utils/
+    │   │   └── auth.js
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   └── index.css
+    ├── .env.example
+    ├── tailwind.config.js
+    ├── vite.config.js
+    ├── postcss.config.js
+    ├── package.json
+    └── README.md
